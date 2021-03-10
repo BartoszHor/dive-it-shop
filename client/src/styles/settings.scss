@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400');
+
+/* BASIC COLORS SETUP */
+
+// $primary: #d79641;
+// $primary-dark: #c17700;
+// $main-white: #fdfcfc;
+// $white: #ffffff;
+// $milk: #e1e1e1;
+// $invisibleGrey: #e2e2e2;
+// $main-grey: #434343;
+// $lightGrey: #b6b6b6;
+// $dark-grey: #363636;
+// $heavenlyGrey: rgb(169, 169, 169);
+// $main-dark: #2a2a2a;
+// $almostBlack:  rgb(42, 42, 42);
+$black: #000000;
+// $blackishBlack: rgba(1, 2, 2, 0.2);
+// $color-warning: #f6b93b;
+// $color-danger: #e06854;
+// $color-success: #78e08f;
+
+/* BASIC VARIABLES SETUP*/
+
+/* FONTS */
+$font-header: 'Raleway', Sans-Serif;
+$font-content: 'Open Sans', Sans-Serif;
+$font-size: 16px;
+$font-weight: 300;
+$letter-spacing: 1px;
+$line-height: 24px;
+$main-spacing: 0.3rem;
+
+/* VIEWS */
+$container-width: 1170px;
+
+/* ANIMATION */
+$main-transition: all 0.3s linear;
+$transition: 0.3s linear;
+%hover-effect {
+  transition: $main-transition;
+  cursor: pointer;
+}
+
+/* SHADOWS */
+$light-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+$dark-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+/* MIXINS */
+@mixin flex($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
