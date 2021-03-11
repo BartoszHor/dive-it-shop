@@ -1,7 +1,8 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk  from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import {initialState} from './initialState'
+import {initialState} from './initialState';
+import logger from 'redux-logger';
 
 
 // import reducers
@@ -20,10 +21,12 @@ Object.keys(initialState).forEach(item => {
 const combinedReducers = combineReducers(reducers);
 
 // create store
-export const store = createStore(
+const store = createStore(
   combinedReducers,
   initialState,
   composeWithDevTools(
-    applyMiddleware(thunk)
+    applyMiddleware(thunk, logger)
   )
 );
+
+export default store;
