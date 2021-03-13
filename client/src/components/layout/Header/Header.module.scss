@@ -3,13 +3,30 @@
 .navi{
     min-height: 100px;
     position: relative;
+    color: white;
 }
 #item {
     display: flex;
     justify-content: center;
+    color: $secondaryBlue;
 }
 
 .menuCollapse {
     text-align: center;
-    margin: 0 15px
+    margin: 0 15px;
+
+    a::after {
+        display: none
+    }
+}
+
+#dropdownItem {
+    display: flex;
+    justify-content: center;
+}
+
+.offer {
+    display: flex;
+    justify-content:  center;
+    color: $secondaryBlue;
 }
