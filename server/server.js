@@ -4,9 +4,12 @@ const cors = require('cors')
 const path = require('path');
 const helmet = require('helmet');
 
-const server = app.listen(process.env.PORT || 8000, () => { 
-    console.log('Server is running...')
+const PORT = process.env.PORT || 8000
+
+const server = app.listen(PORT, () => { 
+    console.log(`Server is running on port ${PORT}`)
 })
+
 
 //Middlewares//
 

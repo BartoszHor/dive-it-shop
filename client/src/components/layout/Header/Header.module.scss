@@ -1,0 +1,15 @@
+@import "../../../styles/settings.scss";
+
+.navi{
+    min-height: 100px;
+    position: relative;
+}
+#item {
+    display: flex;
+    justify-content: center;
+}
+
+.menuCollapse {
+    text-align: center;
+    margin: 0 15px
+}
