@@ -5,7 +5,7 @@ const Particle = () => (
   <div
     style={{
       position: "absolute",
-      top: 54,
+      top: 136,
       left: 0,
       width: "100%",
       height: "100%"

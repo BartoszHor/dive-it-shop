@@ -70,3 +70,6 @@ typings/
 
 #VS Code Bookmarks extension
 bookmarks.json
+
+#config
+config.js
